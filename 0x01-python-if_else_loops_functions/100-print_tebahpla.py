@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-
-for i in range(122, 96, -1):
-    if i % 2 == 1:
-        print("{}".format(chr(i-32)), end='')
+i = 122
+while (i >= 65):
+    if (i > 90) and (i < 97):
+        break
+    print("{}".format(chr(i)), end="")
+    if i < 97:
+        i += 31
         continue
-    print("{}".format(chr(i)), end='')
+    i -= 33

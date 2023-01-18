@@ -2,7 +2,7 @@
 if __name__ == "__main__":
     import hidden_4
 
-    name_list = dir(hidden_4)
-    for name in name_list:
-        if not name.startswith("__"):
+    names = dir(hidden_4)
+    for name in names:
+        if name[:2] != "__":
             print(name)
